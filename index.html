@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h1 class="title-header">Juego pares</h1>
+<img src="img/memoria.png" alt="logo de juegos" class="img-logo"> 
+  <div class="overlay visible">
+   <H1>Click to Start</H1> 
+  </div>
+  <div id="game-over-text" class="overlay">
+   <H1>Game Over</H1>
+    <span class="overlay-small">Click to Restart</span>
+  </div>
+  <div id="victory-text" class="overlay">
+  <H1>Victory</H1>
+    <span class="overlay-small">Click to Restart</span>
+      <div class="container-score">
+<ul  class="hearts">
+        <li class="heart"><i class="fa fa-star"></i></li>
+        <li class="heart"><i class="fa fa-star"></i></li>
+        <li class="heart"><i class="fa fa-star"></i></li>
+        <li class="heart"><i class="fa fa-star"></i></li>
+        <li class="heart"><i class="fa fa-star"></i></li>
+      </ul>
+
+      <span id="grade"></span>
+
+</div>
+  </div>
+   <section class="score-panel">
+            <ul class="stars">
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+            </ul>
+
+            <div class="restart">
+                <i class="fa fa-repeat"></i>
+            </div>
+        </section>
+  <section class="game-container">
+    
+    <div class="game-information-container">
+      <div class="game-information">
+        Time <span id="time-remaining">100</span>
+      </div>
+      <div class="game-information">
+        Flips <span id="flips">0</span>
+      </div>
+    </div>
+ <div class="card" data-framework="memoria">
+<img src="img/Agumon.jpg"  class="front-card">
+<img src="img/1.jpg" class="back-card">
+</div>
+ <div class="card" data-framework="memoria" >
+<img src="img/Agumon.jpg" class="front-card">
+<img src="img/1.jpg" class="back-card">
+</div>
+ <div class="card" data-framework="corazon-icon">
+<img src="img/agumon2.png"  class="front-card">
+<img src="img/1.jpg" class="back-card">
+</div>
+ <div class="card"  data-framework="corazon-icon">
+<img src="img/agumon2.png"  class="front-card">
+<img src="img/1.jpg" class="back-card">
+</div>
+<div class="card" data-framework="Cauldron">
+<img src="img/gabumon.png"  class="front-card">
+<img src="img/1.jpg" class="back-card">
+</div>
+<div class="card" data-framework="Cauldron">
+<img src="img/gabumon.png"  class="front-card">
+<img src="img/1.jpg" class="back-card">
+</div>
+<div class="card" data-framework="Spider">
+<img src="img/agumongrande.jpg"  class="front-card">
+<img src="img/1.jpg" class="back-card">
+</div>
+<div class="card" data-framework="Spider">
+<img src="img/agumongrande.jpg"  class="front-card">
+<img src="img/1.jpg" class="back-card">
+</div>
+  </section>
+  <script src="scripts.js"></script>
+</body>
+</html>
