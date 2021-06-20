@@ -127,11 +127,18 @@ function remove_life() {
  
 
     function updateGrade() {
-    if(moves > 3) {
+
+    if (moves <=6) {
+        if(grade!=="Perfect"){
+            grade="Perfect";
+            gradeSpan.innerHTML=grade;
+        }
+    }
+    if(moves > 6) {
 
     // IF the grade is not Average
-      if(grade !== "Average")  {
-        grade = "Average";
+      if(grade !== "Great")  {
+        grade = "Great";
         gradeSpan.innerHTML = grade;
       for( i= 0; i < 5; i++){
             if(i >3){
@@ -140,11 +147,11 @@ function remove_life() {
         }
       }
     }
-    if(moves >5 ) {
+    if(moves >7 ) {
 
          // IF the grade is not Poor
-      if(grade !== "Poor") {
-        grade = "Poor";
+      if(grade !== "Average") {
+        grade = "Average";
         gradeSpan.innerHTML = grade;
          for( i= 0; i < 5; i++){
             if(i > 2){

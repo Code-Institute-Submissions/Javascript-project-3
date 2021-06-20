@@ -1,59 +1,170 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome USER_NAME,
+ #  **Welcome to my page.**
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
 
-## Gitpod Reminders
+ ## **1. Purpose of the project**
+With this project I would like to create a memory game that challenges the player.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## **2. User stories**
+## Player
+As a player, I would like to play  a game that challenges my skills.
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
+As a player, I want to know how I'm performing at the game.
 
-Another blue button should appear to click: _Open Browser_.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## **3. Features**
 
-A blue button should appear to click: _Make Public_,
+The website will consist of 4 pages.
 
-Another blue button should appear to click: _Open Browser_.
+### 3.1 Start game
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+-An overlay that disappears once is clicked.
+ 
+ ### 3.2 Main game
 
-To log into the Heroku toolbelt CLI:
+  - The main game page.
+  - 8 cards.
+  - Life container.
+  - Time counter.
+  - Hero image.
+  - Title at top of the page.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+ ### 3.3 Victory
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidently make it public then you can create a new one with _Regenerate API Key_.
+  -An overlay that disappears once is clicked.
+ - An span that score your performance.
+ - Stars that disappear depend on the performance.
 
-## Updates Since The Instructional Video
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+ ###  3.4 Defeat
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+  - An overlay that disappears once is clicked.
+  - Text to restart.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+ 
+## **4. Typography and color scheme**
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### Fonts.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+- Titles and headers [Times New Roman](https://www.fonts.com/font/monotype/times-new-roman?QueryFontType=Web&src=GoogleWebFonts) font.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+-Overlays [Courier New](https://www.fonts.com/font/monotype/courier-new-os) font.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### Colors
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+Start game
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+- Background color of overlay is [#91ec6f](https://www.color-hex.com/color/91ec6f) and the transition changes to [#ec6fa2](color-hex.com/color/ec6fa2)
 
----
+- De color of text is [rgb((255,0,0))](https://www.color-hex.com/color/ff0000)
 
-Happy coding!
+Game 
+
+- Background color is [#ec6fa2](color-hex.com/color/ec6fa2)
+
+- H1 is [rgb(0,0,0)](https://www.color-hex.com/color/ff0000)
+
+-Background color from cards is [beige](https://www.color-hex.com/color/f5f5dc)
+
+-[fa-star](https://fontawesome.com/v4.7/icon/star) are [black](https://www.color-hex.com/color/000000) and turn to [red](https://www.color-hex.com/color/ff0000) when there is a missmatched 
+
+Victory
+
+- Background color is [#ec6fa2](color-hex.com/color/ec6fa2)
+
+-[fa-star](https://fontawesome.com/v4.7/icon/star) have a [red](https://www.color-hex.com/color/ff0000)
+
+-H1 is [rgb(0,0,0)](https://www.color-hex.com/color/ff0000)
+
+- [span](https://www.w3schools.com/tags/tag_span.asp) have a [white](color-hex.com/color/ffffff)
+
+-[span](https://www.w3schools.com/tags/tag_span.asp) have a [black](https://www.color-hex.com/color/000000)
+
+Defeat
+
+- Background color is [#ec6fa2](color-hex.com/color/ec6fa2)
+
+-H1 is [rgb(0,0,0)](https://www.color-hex.com/color/ff0000)
+
+-[span](https://www.w3schools.com/tags/tag_span.asp) have a [black](https://www.color-hex.com/color/000000)
+
+
+## **5. Technology**
+
+- [Css](https://www.w3.org/Style/CSS/Overview.en.html) was used to style the website.
+- [Html](https://en.wikipedia.org/wiki/HTML) is the base code for the page.
+- [Font awesome](https://fontawesome.com/v4.7.0/icon/bars) is used on life and start container.
+- [Google font](https://fonts.google.com/)  is used to style text.
+- [Gitpod](https://www.gitpod.io/) is used to deploy the code.
+- [Javascript](https://www.javascript.com/) is used as a main code of the page.
+
+## **6. Testing**
+
+  ### 6.1 Start game
+
+  ### Lapton/computer.
+![](assets/photos/laptop/start game computer.png)
+
+  ### Phone.
+![](assets/photos/phone/start-phone.png)
+
+  ### 6.2 Game
+ 
+ ### Lapton/computer.
+ ![](assets/photos/laptop/Computer Cards.png)
+
+ ### Phone.
+![](assets/photos/phone/Iphone6.png)
+
+ ### 6.3 Victory
+
+ ### Lapton/computer.
+ ![](assets/photos/laptop/Victory laptop.png)
+
+ ### Phone.
+![](assets/photos/phone/victory-phone.png)
+
+ ### 6.4 Defeat
+ ![](assets/photos/phone/defeat-phone.png)
+
+ ### Lapton/computer.
+ ![](assets/photos/laptop/Defeat laptop.png)
+
+ ### Phone.
+![](assets/photos/phone/defeat-phone.png)
+
+## **7. Deployment**
+### 7.1 GitHub Pages
+The project was deployed to GitHub Pages using the following steps...
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
+3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
+4. The page will automatically refresh.
+5 .Scroll back down through the page to locate the now published site [link](https://waltercarreno.github.io/css-html/) in the "GitHub Pages" section.
+
+### Forking the GitHub Repository
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
+
+1. Log in to GitHub and locate the GitHub Repository
+2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+3. You should now have a copy of the original repository in your GitHub account.
+
+
+## 10. Credits
+
+Media Images used from Digimon Websites.
+I used the following sides as references:
+
+
+https://github.com/WebDevSimplified
+
+https://github.com/sandraisrael/Memory-Game-fend
+
+
+https://www.youtube.com/watch?v=AO6etNEl6TA&t=2422s
+
+
+https://marina-ferreira.github.io/tutorials/js/memory-game/

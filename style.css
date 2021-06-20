@@ -1,0 +1,288 @@
+.cabecera-principal {
+    margin-bottom: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100vh;
+}
+
+h1 {
+    font-size: 130px;
+    text-align: center;
+    justify-content: center;
+    grid-row: 1;
+}
+
+.title-header {
+ color:black;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: normal;
+  text-align: center;
+  font-size: 4em;
+}
+
+.img-logo {
+	width: 120px;
+	margin: 0 auto;
+	display: block;
+}
+
+.container-life {
+   display: inline-block;
+    margin-top: 25px;
+    width: 50%;
+  margin-left: 15%; 
+  justify-content: center;
+    
+}
+
+
+.game-information-container {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.game-information {
+  color: #FFBB89;
+   font-size: 2em;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(#ec6f6f, #716fec);
+}
+
+.game-container {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 15px;
+  justify-content: center;
+   perspective: 1000px;
+}
+
+.card {
+    background-color: beige;
+    height: 18rem;
+    width: 18rem;
+    position: relative;
+    margin: 5px;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+
+.card:active{
+    transform: scale(0.97);
+    transition: transform .2s;
+}
+
+.card.flip{
+   transform: rotateY(180deg);
+}
+
+.back-card {
+ height: 100%;
+    width: 100%;
+    margin: 0 auto;
+     position: absolute;
+     padding: 5px;
+  backface-visibility: hidden;
+}
+
+.card.matched  {
+  animation: dance 1s linear infinite 500ms;
+}
+
+
+.front-card {
+   height: 100%;
+    width: 100%;
+    margin: 0 auto;
+     position: absolute;
+     padding: 5px;
+  backface-visibility: hidden;  
+}
+
+.front-card {
+  transform: rotateY(180deg);
+}
+
+.overlay {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  display: none;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  font-family: 'Courier New', Courier, monospace;
+  transition: background-color 1000ms, font-size 1000ms;
+  flex-direction: column;
+}
+
+.overlay-small {
+  font-size: 10px;
+  text-align: center;
+  justify-content: center;
+  color: black;
+}
+
+.overlay.visible {
+  display: flex;
+  animation: overlay-grow 4000ms forwards;
+}
+
+@keyframes overlay-grow {
+  from {
+    background-color:#91ec6f;
+    font-size: 0;
+  }
+  to {
+    background-color: #ec6fa2;
+    font-size: 4em;
+  }
+}
+
+ .stars {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  margin: 0 5px 0 0;
+}
+
+.stars li {
+  list-style: none;
+  display: inline-block;
+  font-size: 45px;
+}
+
+.container-score {
+    margin-left: 15%;
+   display: inline-block;
+    margin-top: 25px;
+ text-align: center;
+  justify-content: center;
+  content: center;
+  margin-right: 15%;
+    
+}
+
+
+
+#grade {
+    margin-left:15%;
+    display: flex;
+    grid-column: 1 / -1;
+    font-size: 50px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    margin-right: 15%;
+}
+
+
+ .hearts {
+  margin-left:15%;
+  padding: 0;
+  display: inline-block;
+  margin: 0 5px 0 0;
+  text-align: center;
+  justify-content: center;
+}
+
+.hearts li {
+ text-align: center;
+    justify-content: center;
+  list-style: none;
+  display: inline-block;
+  font-size: 40px;
+  justify-content: center;
+  text-align: center;
+}
+
+
+
+.emptystar {
+    color: transparent;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #ffcd00;
+    opacity: 0;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+   .overlay{
+ text-align: center;
+  content: center;
+  z-index: 100;
+  display: none;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  font-family: 'Courier New', Courier, monospace;
+  transition: background-color 1000ms, font-size 1000ms;
+  flex-direction: column;
+   }
+  .game-container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 5px;
+  justify-content: center;
+   perspective: 1000px;
+}
+h1 {
+    font-size:50px;
+}
+.card {
+    background-color: beige;
+    height:7rem;
+    width: 10rem;
+    position: relative;
+    margin: 5px;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+.stars li {
+  list-style: none;
+  display: inline-block;
+  font-size: 25px;
+}
+
+.container-life {
+    text-align: center;
+    justify-content: center;
+}
+.img-logo {
+    display:none;
+}
+.title-header{display:none}
+
+.game-information{font-size:1em;}
+
+.container-score{
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.hearts {
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin-right:10px;
+}
+}
+
