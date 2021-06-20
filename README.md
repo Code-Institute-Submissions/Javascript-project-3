@@ -153,7 +153,7 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 3. You should now have a copy of the original repository in your GitHub account.
 
 
-## 10. Credits
+## 8. Credits
 
 Media Images used from Digimon Websites.
 I used the following sides as references:
