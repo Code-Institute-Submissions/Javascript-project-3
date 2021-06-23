@@ -142,7 +142,6 @@ Defeat
 ![](assets/photos/phone/victory-phone.png)
 
  ### 6.4 Defeat
- ![](assets/photos/phone/defeat-phone.png)
 
  ### Lapton/computer.
  ![](assets/photos/laptop/Defeatlaptop.png)
