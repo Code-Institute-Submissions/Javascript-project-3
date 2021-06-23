@@ -12,6 +12,14 @@ As a player, I would like to play  a game that challenges my skills.
 
 As a player, I want to know how I'm performing at the game.
 
+When a player click a card the moves increase.
+
+When a player makes a mistake the hearts change color to red.
+
+The player have 5 live.
+
+At the overlay player can see their performance. From Perfect to Average.
+
 
 ## **3. Features**
 
@@ -102,10 +110,17 @@ Defeat
 
 ## **6. Testing**
 
+### Code validation.
+
+ HTML validated by [w3CValidator](https://validator.w3.org/)
+ Css validated by[W3CValidator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fharlequin-bat-rnx2rhcz.ws-eu08.gitpod.io%2F%23%2Fworkspace%2FJavascript-project&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=es)
+ Javascript validated by [beautifytools](https://beautifytools.com/javascript-validator.php)
+
+ The game works in laptop, Ipad and Iphone 6/7/8 and samsumg galaxy 7/8. Problems compatilibity in Ipad pro.
   ### 6.1 Start game
 
   ### Lapton/computer.
-![](assets/photos/laptop/start game computer.png)
+![](assets/photos/laptop/startgamecomputer.png)
 
   ### Phone.
 ![](assets/photos/phone/start-phone.png)
@@ -113,7 +128,7 @@ Defeat
   ### 6.2 Game
  
  ### Lapton/computer.
- ![](assets/photos/laptop/Computer Cards.png)
+ ![](assets/photos/laptop/ComputerCards.png)
 
  ### Phone.
 ![](assets/photos/phone/Iphone6.png)
@@ -121,7 +136,7 @@ Defeat
  ### 6.3 Victory
 
  ### Lapton/computer.
- ![](assets/photos/laptop/Victory laptop.png)
+ ![](assets/photos/laptop/Victory-laptop.png)
 
  ### Phone.
 ![](assets/photos/phone/victory-phone.png)
@@ -130,7 +145,7 @@ Defeat
  ![](assets/photos/phone/defeat-phone.png)
 
  ### Lapton/computer.
- ![](assets/photos/laptop/Defeat laptop.png)
+ ![](assets/photos/laptop/Defeatlaptop.png)
 
  ### Phone.
 ![](assets/photos/phone/defeat-phone.png)
